@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Slick Css -->
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Learning</title>
+</head>
+
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="h1 fas fa-ad my-md-0"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Category</a>
+                    </li>
+                </ul>
+
+                <!-- Search Box -->
+                <form class="form-inline my-2 my-lg-0 w-50 justify-content-lg-center">
+                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search"
+                        name="search">
+                    <button class="btn btn-danger my-2 my-sm-0" type="submit"><i><i
+                                class="fas fa-search"></i></i></button>
+                </form>
+
+                <div class="ml-auto">
+                    <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#registerModal">Register</a>
+                    <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#loginModal">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main -->
+    <div class="container">
+        <!-- Course category -->
+        <div class="container bg-white shadow-sm my-4 px-4 py-2">
+            <!-- Course Category List, display max 9 categories -->
+            <div>
+                <h3>Course Category</h3>
+            </div>
+            <div class="btn-group my-3 category-list d-flex align-items-center" role="group" aria-label="Basic example">
+                <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-3">START</a>
+                <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-3">Education</a>
+                <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-3">Education</a>
+                <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-3">Education</a>
+                <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-3">Education</a>
+                <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-3">Education</a>
+                <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-3">Education</a>
+                <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-3">Education</a>
+                <a href="#" class="btn btn-outline-success mx-2 rounded-pill px-3">END</a>
+            </div>
+        </div>
+
+        <!-- Top Rated Course -->
+        <div class="mb-4">
+            <h3>Top Rated Course</h3>
+            <div class="card-deck">
+
+
+                <!-- Top rated course list display top 3 course with highest rating -->
+                <!-- Card -->
+                <div class="card">
+                    <!-- Course Image -->
+                    <img src="images/courseImages/course1.jpg" class="card-img-top">
+                    <div class="card-body p-3">
+                        <!-- Course title --> <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                        <div class="card-text">
+                            <!-- Facilitator Name -->
+                            <small class="text-muted">By: Jason Allen</small>
+
+                            <!-- THIS course category list-->
+                            <div>
+                                <span>Category: </span>
+                                <div class="card-category-list">
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <!-- Course Rating -->
+                                <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                <!-- Solded Course Quantity -->
+                                <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                <!-- Course Price -->
+                                <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                            </div>
+
+                            <!-- Display available course quantity  -->
+                            <small class="text-muted">15 modul remaining</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <!-- Course Image -->
+                    <img src="images/courseImages/course1.jpg" class="card-img-top">
+                    <div class="card-body p-3">
+                        <!-- Course title --> <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                        <div class="card-text">
+                            <!-- Facilitator Name -->
+                            <small class="text-muted">By: Jason Allen</small>
+
+                            <!-- THIS course category list-->
+                            <div>
+                                <span>Category: </span>
+                                <div class="card-category-list">
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <!-- Course Rating -->
+                                <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                <!-- Solded Course Quantity -->
+                                <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                <!-- Course Price -->
+                                <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                            </div>
+
+                            <!-- Display available course quantity  -->
+                            <small class="text-muted">15 modul remaining</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+
+                <!-- Card -->
+                <div class="card">
+                    <!-- Course Image -->
+                    <img src="images/courseImages/course1.jpg" class="card-img-top">
+                    <div class="card-body p-3">
+                        <!-- Course title --> <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                        <div class="card-text">
+                            <!-- Facilitator Name -->
+                            <small class="text-muted">By: Jason Allen</small>
+
+                            <!-- THIS course category list-->
+                            <div>
+                                <span>Category: </span>
+                                <div class="card-category-list">
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                    <a href="#" class="badge badge-primary">Music</a>
+                                </div>
+                            </div>
+
+                            <div>
+                                <!-- Course Rating -->
+                                <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                <!-- Solded Course Quantity -->
+                                <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                <!-- Course Price -->
+                                <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                            </div>
+
+                            <!-- Display available course quantity  -->
+                            <small class="text-muted">15 modul remaining</small>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Card -->
+                <!-- End of Top Rated Card List -->
+
+                <!-- View More Button -->
+                <div class="card d-flex align-items-center justify-content-center">
+                    <a href="#" class="text-center">
+                        <i class="h1 fas fa-plus-circle"></i>
+                        <h4>View More</h4>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- End of Top Rated Course -->
+
+        <!-- Recently Added Course -->
+        <div class="mb-4">
+
+            <h3>Recently Added Course</h3>
+            <!-- Recently added course list display 7 most recently added course -->
+            <div class="row row-cols-lg-4 row-cols-md-3">
+
+                <div class="col mb-3">
+                    <div class="card h-100">
+                        <!-- Course Image -->
+                        <img src="images/courseImages/course1.jpg" class="card-img-top">
+                        <div class="card-body p-3">
+                            <!-- Course title -->
+                            <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                            <div class="card-text">
+                                <!-- Facilitator Name -->
+                                <small class="text-muted">By: Jason Allen</small>
+
+                                <!-- THIS course category list-->
+                                <div>
+                                    <span>Category: </span>
+                                    <div class="card-category-list">
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <!-- Course Rating -->
+                                    <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                    <!-- Solded Course Quantity -->
+                                    <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                    <!-- Course Price -->
+                                    <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                                </div>
+
+                                <!-- Display available course quantity  -->
+                                <small class="text-muted">15 modul remaining</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card h-100">
+                        <!-- Course Image -->
+                        <img src="images/courseImages/course1.jpg" class="card-img-top">
+                        <div class="card-body p-3">
+                            <!-- Course title -->
+                            <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                            <div class="card-text">
+                                <!-- Facilitator Name -->
+                                <small class="text-muted">By: Jason Allen</small>
+
+                                <!-- THIS course category list-->
+                                <div>
+                                    <span>Category: </span>
+                                    <div class="card-category-list">
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <!-- Course Rating -->
+                                    <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                    <!-- Solded Course Quantity -->
+                                    <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                    <!-- Course Price -->
+                                    <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                                </div>
+
+                                <!-- Display available course quantity  -->
+                                <small class="text-muted">15 modul remaining</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card h-100">
+                        <!-- Course Image -->
+                        <img src="images/courseImages/course1.jpg" class="card-img-top">
+                        <div class="card-body p-3">
+                            <!-- Course title -->
+                            <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                            <div class="card-text">
+                                <!-- Facilitator Name -->
+                                <small class="text-muted">By: Jason Allen</small>
+
+                                <!-- THIS course category list-->
+                                <div>
+                                    <span>Category: </span>
+                                    <div class="card-category-list">
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <!-- Course Rating -->
+                                    <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                    <!-- Solded Course Quantity -->
+                                    <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                    <!-- Course Price -->
+                                    <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                                </div>
+
+                                <!-- Display available course quantity  -->
+                                <small class="text-muted">15 modul remaining</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card h-100">
+                        <!-- Course Image -->
+                        <img src="images/courseImages/course1.jpg" class="card-img-top">
+                        <div class="card-body p-3">
+                            <!-- Course title -->
+                            <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                            <div class="card-text">
+                                <!-- Facilitator Name -->
+                                <small class="text-muted">By: Jason Allen</small>
+
+                                <!-- THIS course category list-->
+                                <div>
+                                    <span>Category: </span>
+                                    <div class="card-category-list">
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <!-- Course Rating -->
+                                    <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                    <!-- Solded Course Quantity -->
+                                    <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                    <!-- Course Price -->
+                                    <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                                </div>
+
+                                <!-- Display available course quantity  -->
+                                <small class="text-muted">15 modul remaining</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card h-100">
+                        <!-- Course Image -->
+                        <img src="images/courseImages/course1.jpg" class="card-img-top">
+                        <div class="card-body p-3">
+                            <!-- Course title -->
+                            <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                            <div class="card-text">
+                                <!-- Facilitator Name -->
+                                <small class="text-muted">By: Jason Allen</small>
+
+                                <!-- THIS course category list-->
+                                <div>
+                                    <span>Category: </span>
+                                    <div class="card-category-list">
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <!-- Course Rating -->
+                                    <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                    <!-- Solded Course Quantity -->
+                                    <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                    <!-- Course Price -->
+                                    <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                                </div>
+
+                                <!-- Display available course quantity  -->
+                                <small class="text-muted">15 modul remaining</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card h-100">
+                        <!-- Course Image -->
+                        <img src="images/courseImages/course1.jpg" class="card-img-top">
+                        <div class="card-body p-3">
+                            <!-- Course title -->
+                            <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                            <div class="card-text">
+                                <!-- Facilitator Name -->
+                                <small class="text-muted">By: Jason Allen</small>
+
+                                <!-- THIS course category list-->
+                                <div>
+                                    <span>Category: </span>
+                                    <div class="card-category-list">
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <!-- Course Rating -->
+                                    <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                    <!-- Solded Course Quantity -->
+                                    <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                    <!-- Course Price -->
+                                    <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                                </div>
+
+                                <!-- Display available course quantity  -->
+                                <small class="text-muted">15 modul remaining</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-3">
+                    <div class="card h-100">
+                        <!-- Course Image -->
+                        <img src="images/courseImages/course1.jpg" class="card-img-top">
+                        <div class="card-body p-3">
+                            <!-- Course title -->
+                            <a href="#" class="h5 card-link card-title">Music Theory for Electronic Music COMPLETE:Parts 1, 2, & 3 </a>
+
+                            <div class="card-text">
+                                <!-- Facilitator Name -->
+                                <small class="text-muted">By: Jason Allen</small>
+
+                                <!-- THIS course category list-->
+                                <div>
+                                    <span>Category: </span>
+                                    <div class="card-category-list">
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                        <a href="#" class="badge badge-primary">Music</a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <!-- Course Rating -->
+                                    <div><i class="text-warning fas fa-star"></i> 4.5</div>
+                                    <!-- Solded Course Quantity -->
+                                    <div><i class="fas fa-user-alt"></i> 75 people registered</div>
+                                    <!-- Course Price -->
+                                    <div><i class="fas fa-dollar-sign"></i> 19.99</div>
+                                </div>
+
+                                <!-- Display available course quantity  -->
+                                <small class="text-muted">15 modul remaining</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- View More Button -->
+                <div class="col mb-3">
+                    <div class="card d-flex align-items-center justify-content-center">
+                        <a href="#" class="text-center">
+                            <i class="h1 fas fa-plus-circle"></i>
+                            <h4>View More</h4>
+                        </a>
+                    </div>
+                </div>
+                <!-- End of View More Button -->
+
+            </div>
+        </div>
+        <!-- End of Recently Added Course -->
+
+    </div>
+    <!-- End of Main -->
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Register Form -->
+                    <form method="" action="">
+                        <div class="form-row">
+                            <!-- Name -->
+                            <div class="form-group col-md-6">
+                                <label for="inputName">Name</label>
+                                <input type="text" class="form-control" id="inputName" name="name">
+                            </div>
+                            <!-- Email -->
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" name="email">
+                            </div>
+                            <!-- Password -->
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" name="password">
+                            </div>
+                            <!-- Confirm Password -->
+                            <div class="form-group col-md-6">
+                                <label for="inputConfirmPassword">Confirm Password</label>
+                                <input type="password" class="form-control" id="inputConfirmPassword"
+                                    name="confirmPassword">
+                            </div>
+                        </div>
+                        <!-- Password Hint -->
+                        <div class="form-group">
+                            <label for="inputPasswordHint">Password Hint</label>
+                            <input type="text" class="form-control" id="inputPasswordHint" name="PasswordHint">
+                        </div>
+
+                        <!-- Register as Student / Facilitator -->
+                        <div class="form-group">
+                            <label for="">Register as</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="registerAs" id="studentRadio"
+                                        value="student">
+                                    <label class="form-check-label" for="studentRadio">
+                                        Student
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="registerAs" id="facilitatorRadio"
+                                        value="facilitator">
+                                    <label class="form-check-label" for="facilitatorRadio">
+                                        Facilitator
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" type="submit" class="btn btn-primary">Register</button>
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="" action="">
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" name="email">
+                        </div>
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" name="password">
+                        </div>
+                        <button type="button" type="submit" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
