@@ -18,17 +18,16 @@ input[type="search"]{
     overflow: hidden;
 }
 
-.title-highlight{
-    border-bottom: 4px solid red;
-}
-
 .course-info{
     font-size: 16px;
 }
 .callout-top{
-    border-top: 8px solid black;
+    border-top: 6px solid black;
 }
 
+.callout-left{
+    border-left: 6px solid black;
+}
 
 /* Override bootstrap style */
 .btn{
@@ -48,6 +47,15 @@ input[type="search"]{
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+}
+
+#addCourseModal .modal-header, #succesPayModal .modal-header{
+    padding: 8px 0px;
+    border-bottom: none;
+}
+
+#addCourseModal .modal-body, #succesPayModal .modal-body{
+    padding: 8px 0px;
 }
 
 /* Override slick style */

@@ -57,91 +57,102 @@
     <!-- End of Navbar -->
 
     <!-- main -->
-    <div class="container">
+    <div class="container my-4">
 
-        <!-- Course Header -->
-        <div class="my-4">
+        <h3 class="mb-3">Shopping Cart</h3>
+        <div class="row mb-4">
 
-            <!-- About Course -->
-            <div class="row">
-                <div class="col-md-9">
-                    <div class="d-flex align-items-center py-3 bg-white shadow-sm h-100">
-                        <!-- Course Image -->
-                        <div class="col-md-5">
-                            <img src="images/courseImages/course1.jpg" class="img-fluid rounded">
-                        </div>
-
-                        <div class="col-md-7 align-self-center">
-                            <!-- Course Title -->
-                            <h4>
-                                Music Theory for Electronic Music COMPLETE: Parts 1, 2, & 3
-                            </h4>
-
-                            <!-- Course Info (rating, registered student, price) -->
-                            <div class="my-3">
-                                <!-- Display available course quantity  -->
-                                <div class="mb-2"><small class="text-muted">15 modul remaining</small></div>
-                                <!-- Course Rating -->
-                                <span class="mr-3"><i class="text-warning fas fa-star"></i> 4.5</span>
-                                <!-- Solded Course Quantity -->
-                                <span class="mr-3"><i class="fas fa-user-alt"></i> 75 people registered</span>
+            <!-- Course list and total payment -->
+            <div class="col-md-9">
+                <div class="bg-white container callout-left border-danger rounded shadow-sm py-3">
+                    <h4 class="mb-3">Payment</h4>
+                    <!-- Display list of course added into shopping cart -->
+                    <table class="table">
+                        <tbody>
+                            <tr class="row mx-0">
+                                <!-- Course Image -->
+                                <td class="col-md-3 d-flex flex-column justify-content-center">
+                                    <img src="images/courseImages/course1.jpg" class="w-100 " alt="">
+                                </td>
+                                <!-- Course Title -->
+                                <th class="col-md-5 d-flex flex-column justify-content-center">
+                                    <a href="course.html">Music Theory for Electronic Music COMPLETE: Parts 1, 2, &
+                                        3</a>
+                                    <!-- Facilitator Name  -->
+                                    <div class="mb-2"><small class="text-muted">By Jason Allen</small></div>
+                                </th>
                                 <!-- Course Price -->
-                                <span class="mr-3"><i class="fas fa-dollar-sign"></i> 19.99</span>
-                            </div>
+                                <td class="col-md-2 d-flex flex-column justify-content-center">
+                                    <span class="h5 text-success"><i class="fas fa-dollar-sign"></i> 19.99</span>
+                                </td>
+                                <!-- DELETE Course From Cart -->
+                                <td class="col-md-2 d-flex flex-column justify-content-center align-items-center">
+                                    <a href="#" class="btn btn-danger">
+                                        <i class="fas fa-trash"></i> Remove
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                            <!-- INSERT Course to student shopping cart -->
-                            <a class="btn btn-danger text-white" href="#" data-toggle="modal"
-                                data-target="#addCourseModal">
-                                <i class="fas fa-shopping-cart"></i> Add to Cart
-                            </a>
+                    <!-- Total Payment -->
+                    <div>
+                        <h4 class="text-left">Total Payment: <i class="fas fa-dollar-sign"></i> 19.99</h4>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Course list and total payment -->
+
+            <!-- Payment Method -->
+            <div class="col-md-3">
+                <div
+                    class="bg-white callout-top border-success shadow-sm rounded p-3 h-100 d-flex flex-column justify-content-center">
+                    <h5 class="mb-3">Payment Method:</h5>
+                    <!-- Select Payment Method -->
+                    <form action="">
+                        <div class="custom-control custom-radio mb-2">
+                            <input type="radio" id="ovoRadio" name="customRadio" class="custom-control-input"
+                                name="paymentType" value="ovo">
+                            <label class="custom-control-label h6" for="ovoRadio">OVO</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2">
+                            <input type="radio" id="gopayRadio" name="customRadio" class="custom-control-input"
+                                name="paymentType" value="gopay">
+                            <label class="custom-control-label h6" for="gopayRadio">GOPAY</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-2">
+                            <input type="radio" id="danaRadio" name="customRadio" class="custom-control-input"
+                                name="paymentType" value="dana">
+                            <label class="custom-control-label h6" for="danaRadio">Dana</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- End of Payment Method -->
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="container bg-white shadow-sm rounded p-3">
+                    <div class="form-row">
+                        <label for="phoneNumberInput">
+                            <h5 class="mb-1">Phone Number</h5>
+                        </label>
+                        <div class="col-md-9">
+                            
+                            <input type="text" class="form-control mb-2" id="phoneNumberInput">
+                            <small class="form-text text-muted">
+                                Input your phone number that corresponds with the chosen payment method
+                            </small>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="" class="btn d-block btn-success" data-toggle="modal" data-target="#succesPayModal">Pay</a>
                         </div>
                     </div>
                 </div>
-                <!-- End of About Course -->
-
-                <!-- About Facilitator -->
-                <div class="col-md-3">
-                    <div
-                        class="d-flex flex-column justify-content-md-center align-items-start p-3 bg-white shadow-sm h-100">
-                        <h5>Course Facilitator</h5>
-                        <div class="form-group">
-                            <label class="h6 mb-1">Name:</label>
-                            <span class="d-block text-break">Jason Allen</span>
-                        </div>
-                        <div class="form-group">
-                            <label class="h6 mb-1">Email:</label>
-                            <span class="d-block text-break">Jason@mail.com</span>
-                        </div>
-                        <a href="#" class="btn btn-outline-primary mt-1">Facilitator Profile</a>
-                    </div>
-                </div>
-                <!-- End of About Facilitator -->
             </div>
         </div>
-        <!-- End of Course Header -->
-
-        <!-- Course Description -->
-        <div class="cointainer callout-top border-primary bg-white shadow-sm rounded py-3 px-5 mb-4">
-            <h4>Course Description</h4>
-            <p class="text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                deserunt mollit anim id est laborum.
-                <br>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-                vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
-                qui dolorem eum fugiat quo voluptas nulla pariatur?
-            </p>
-        </div>
-        <!-- End of Course Description -->
 
     </div>
     <!-- End of Main -->
@@ -249,8 +260,8 @@
         </div>
     </div>
 
-    <!-- Adding Course To Cart Modal -->
-    <div class="modal fade" id="addCourseModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <!-- Success Payment Modal -->
+    <div class="modal fade" id="succesPayModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -262,7 +273,7 @@
                     </div>
                     <div class="modal-body">
                         <div class="alert alert-success mb-2 text-center">
-                            This course has been added to your cart
+                            Transaction success!!
                         </div>
                     </div>
                 </div>
