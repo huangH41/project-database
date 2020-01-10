@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Slick Css -->
+    <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Learning</title>
+</head>
+
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="h1 fas fa-ad my-md-0"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Category</a>
+                    </li>
+                </ul>
+
+                <!-- Search Box -->
+                <form class="form-inline my-2 my-lg-0 w-50 justify-content-md-center">
+                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search" aria-label="Search"
+                        name="search">
+                    <button class="btn btn-danger my-2 my-sm-0" type="submit"><i><i
+                                class="fas fa-search"></i></i></button>
+                </form>
+
+                <div class="ml-auto">
+                    <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#registerModal">Register</a>
+                    <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#loginModal">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- End of Navbar -->
+
+    <!-- main -->
+    <div class="container">
+
+        <!-- Course Header -->
+        <div class="my-4">
+
+            <!-- About Course -->
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="d-flex align-items-center py-3 bg-white shadow-sm h-100">
+                        <!-- Course Image -->
+                        <div class="col-md-5">
+                            <img src="images/courseImages/course1.jpg" class="img-fluid rounded">
+                        </div>
+
+                        <div class="col-md-7 align-self-center">
+                            <!-- Course Title -->
+                            <h4>
+                                Music Theory for Electronic Music COMPLETE: Parts 1, 2, & 3
+                            </h4>
+
+                            <!-- Display available course quantity  -->
+                            <div><small class="text-muted">15 modul remaining</small></div>
+
+                            <!-- Course Info (rating, registered student, price) -->
+                            <div class="my-2">
+                                <!-- Course Rating -->
+                                <span class="mr-3"><i class="text-warning fas fa-star"></i> 4.5</span>
+                                <!-- Solded Course Quantity -->
+                                <span class="mr-3"><i class="fas fa-user-alt"></i> 75 people registered</span>
+                                <!-- Course Price -->
+                                <span class="mr-3"><i class="fas fa-dollar-sign"></i> 19.99</span>
+                            </div>
+
+                            <!-- INSERT Course to student shopping cart -->
+                            <a class="btn btn-primary text-white" href="#">
+                                <i class="fas fa-shopping-cart"></i> Send to Cart
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of About Course -->
+
+                <!-- About Facilitator -->
+                <div class="col-md-3">
+                    <div
+                        class="d-flex flex-column justify-content-md-center align-items-start p-3 bg-white shadow-sm h-100">
+                        <h5>Course Facilitator</h5>
+                        <div class="form-group">
+                            <label class="h6 mb-1">Name:</label>
+                            <span class="d-block text-break">Jason Allen</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="h6 mb-1">Email:</label>
+                            <span class="d-block text-break">Jason@mail.com</span>
+                        </div>
+                        <a href="#" class="btn btn-outline-primary mt-1">Facilitator Profile</a>
+                    </div>
+                </div>
+                <!-- End of About Facilitator -->
+            </div>
+        </div>
+        <!-- End of Course Header -->
+
+        <!-- Course Description -->
+        <div class="cointainer callout-top border-primary bg-white shadow-sm rounded py-3 px-5 mb-4">
+            <h4>Course Description</h4>
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+                <br>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
+                vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+                qui dolorem eum fugiat quo voluptas nulla pariatur?
+            </p>
+        </div>
+
+    </div>
+    <!-- End of Main -->
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- Register Form -->
+                    <form method="" action="">
+                        <div class="form-row">
+                            <!-- Name -->
+                            <div class="form-group col-md-6">
+                                <label for="inputName">Name</label>
+                                <input type="text" class="form-control" id="inputName" name="name">
+                            </div>
+                            <!-- Email -->
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" name="email">
+                            </div>
+                            <!-- Password -->
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword">Password</label>
+                                <input type="password" class="form-control" id="inputPassword" name="password">
+                            </div>
+                            <!-- Confirm Password -->
+                            <div class="form-group col-md-6">
+                                <label for="inputConfirmPassword">Confirm Password</label>
+                                <input type="password" class="form-control" id="inputConfirmPassword"
+                                    name="confirmPassword">
+                            </div>
+                        </div>
+                        <!-- Password Hint -->
+                        <div class="form-group">
+                            <label for="inputPasswordHint">Password Hint</label>
+                            <input type="text" class="form-control" id="inputPasswordHint" name="PasswordHint">
+                        </div>
+
+                        <!-- Register as Student / Facilitator -->
+                        <div class="form-group">
+                            <label for="">Register as</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="registerAs" id="studentRadio"
+                                        value="student">
+                                    <label class="form-check-label" for="studentRadio">
+                                        Student
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="registerAs" id="facilitatorRadio"
+                                        value="facilitator">
+                                    <label class="form-check-label" for="facilitatorRadio">
+                                        Facilitator
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="button" type="submit" class="btn btn-primary">Register</button>
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form method="" action="">
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" name="email">
+                        </div>
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label for="inputPassword">Password</label>
+                            <input type="password" class="form-control" id="inputPassword" name="password">
+                        </div>
+                        <button type="button" type="submit" class="btn btn-primary">Login</button>
+                        <button type="button" class="btn btn-outline-danger" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

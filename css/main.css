@@ -18,6 +18,18 @@ input[type="search"]{
     overflow: hidden;
 }
 
+.title-highlight{
+    border-bottom: 4px solid red;
+}
+
+.course-info{
+    font-size: 16px;
+}
+.callout-top{
+    border-top: 8px solid black;
+}
+
+
 /* Override bootstrap style */
 .btn{
     font-weight: 500;
