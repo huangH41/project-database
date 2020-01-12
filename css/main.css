@@ -29,6 +29,15 @@ input[type="search"]{
     border-left: 6px solid black;
 }
 
+.course-description{
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
 /* Override bootstrap style */
 .btn{
     font-weight: 500;
